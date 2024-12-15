@@ -1,0 +1,29 @@
+.scroll-watcher {
+  height: 10px;
+  position: fixed;
+  top: 4em;
+  left: 0;
+  z-index: 1000;
+  background-color: #ff9b60;
+  width: 100%;
+  /* Initial X scale will be 0, Y will be 1*/
+  scale: 0 1;
+  transform-origin: left;
+  /* Defining the animation and its easing function */
+  animation: scroll-watcher linear;
+  /* Adding the scroll trigger */
+  animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .scroll-watcher {
+    top: 0;
+    /* Ajusta el espacio superior */
+  }
+}

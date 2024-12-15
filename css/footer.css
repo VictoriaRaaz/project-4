@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* border-width: 3px;
+  border-style: solid;
+  border-color: black;  */
+}
+
+footer {
+  background-color: #596e79;
+  /* Footer background color */
+  color: white;
+  /* Text color */
+  font-size: large;
+  /* Text size */
+  text-align: center;
+  /* Align text to center */
+
+  margin-top: 2em;
+  /* Space above the footer */
+  padding: 1em;
+  /* Add padding */
+}
+
+/* .logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+} */
+
+.logo img {
+  width: 200px;
+  /* Set the width of the images */
+
+  height: 100%;
+  /* Make sure the image fills the full height */
+  object-fit: contain;
+  /* Maintain image proportions */
+}
+
+.center-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* .right-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+} */
+
+.right-footer img {
+  width: 200px;
+  /* Set the width of the images */
+  height: 100%;
+  /* Make sure the image fills the full height */
+  object-fit: contain;
+}
+
+/* Social media icons */
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 10px; */
+  /* -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055); */
+}
+
+.social-media-icons svg {
+  width: 40px;
+}
+
+.social-icon-1,
+.social-icon-1-1,
+.social-icon-2,
+.social-icon-2-2,
+.social-icon-3,
+.social-icon-3-3,
+.social-icon-4,
+.social-icon-4-4 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin: 20px 0 0px 0;
+}
+
+.icon svg {
+  fill: #111;
+}
+
+.socialcontainer {
+  height: 80px;
+  overflow: hidden;
+}
+
+.social-icon-1 {
+  transition-duration: 0.4s;
+  background-color: rgb(0, 0, 0);
+  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+}
+
+.social-icon-1 svg,
+.social-icon-2 svg,
+.social-icon-3 svg,
+.social-icon-4 svg {
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.social-icon-1-1 {
+  transition-duration: 0.4s;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.socialcontainer:hover .social-icon-1 {
+  transform: translateY(-70px);
+}
+
+.socialcontainer:hover .social-icon-1 svg,
+.socialcontainer:hover .social-icon-2 svg,
+.socialcontainer:hover .social-icon-3 svg,
+.socialcontainer:hover .social-icon-4 svg {
+  opacity: 1;
+}
+
+.social-icon-2 {
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  background: linear-gradient(72.44deg,
+      #ff7a00 11.92%,
+      #ff0169 51.56%,
+      #d300c5 85.69%);
+}
+
+.socialcontainer:hover .social-icon-2 {
+  transform: translateY(-70px);
+}
+
+.social-icon-3 {
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  background: #316ff6;
+}
+
+.socialcontainer:hover .social-icon-3 {
+  transform: translateY(-70px);
+}
+
+.social-icon-4 {
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+
+  background: linear-gradient(180deg,
+      rgba(129, 34, 144, 1) 0%,
+      rgba(77, 34, 124, 1) 91%);
+}
+
+.socialcontainer:hover .social-icon-4 {
+  transform: translateY(-70px);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 150px;
+    /* Set the width of the images */
+  }
+
+  .right-footer img {
+    width: 150px;
+    /* Set the width of the images */
+  }
+
+  .center-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 1.5em;
+    /* More space on small devices */
+    font-size: medium;
+    /* Smaller font size to fit better */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 2em;
+    /* More space */
+    font-size: medium;
+    /* Medium font size */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  footer {
+    padding: 2.5em;
+    /* More space for laptops and desktops */
+    font-size: large;
+    /* Large font size */
+  }
+}

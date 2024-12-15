@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #D9C6B0;
+  ;
+}
+
+.container-1 {
+  display: flex;
+  /* Sets the container as a flex container */
+  flex-direction: row;
+  /* Aligns the container's content in a row */
+  flex-wrap: wrap;
+  /* Allows elements to wrap into multiple lines if they don’t fit on a single line */
+  justify-content: space-between;
+  /* Distributes elements with one at the start and another at the end */
+  padding: 2em;
+  /* Add space around the content */
+
+  padding-top: 80px;
+}
+
+.left-container-h1 {
+  margin-bottom: 1em;
+}
+
+.left-container {
+  width: 75%;
+}
+
+.left-container p {
+  font-size: large;
+  margin-bottom: 1em;
+  /*adds a margin below each paragraph */
+}
+
+.right-container img {
+  border-color: black;
+  /* border color (black) */
+  border-width: 3px;
+  /* border width */
+  border-style: solid;
+  /* border style */
+}

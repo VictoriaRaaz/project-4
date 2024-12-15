@@ -1,0 +1,51 @@
+.table-show-comments {
+  margin-top: 5%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  text-align: left;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+/* Style for table headers */
+.table-show-comments thead th {
+  background-color: royalblue;
+  padding: 12px;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+/* Style for rows and cells */
+.table-show-comments tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.show-comments button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-comments {
+  display: none;
+}
+
+.delete-comments {
+  display: none;
+}

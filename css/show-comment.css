@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Menu Style */
+
+header {
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-nav.open {
+  left: 0;
+}
+
+.contact {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #a3ae89;
+  padding: 10px 20px;
+
+  font-size: large;
+
+}
+
+li {
+  float: right;
+}
+
+li img {
+  width: auto;
+  height: 27px;
+  display: block;
+  object-fit: contain;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #828c6b;
+  border-radius: 20px;
+
+}
+
+.menu-toggle,
+.menu-close {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  background-color: rgba(0, 0, 0, 0.577);
+  /* Fondo suave de color gris claro */
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.173);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.data-container {
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  margin-top: 10%;
+  margin-bottom: 29%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .menu-toggle,
+  .menu-close {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #a3ae89;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    gap: 10px;
+    padding: 20px;
+    z-index: 1000;
+    transition: left 0.4s ease;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li img {
+    margin-top: 9%;
+    height: 40px;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 5%;
+    right: 10px;
+  }
+
+  .menu-toggle.open {
+    display: none;
+  }
+}

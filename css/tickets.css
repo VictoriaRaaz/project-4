@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Body Style */
+
+body {
+  background-image: url('../img/museum3.jpg');
+  background-size: cover;
+  /* Adjust the background image to cover the entire header */
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container-1 {
+  display: flex;
+  /* Sets the container as a flex container */
+  flex-direction: row;
+  /* Aligns the container's content in a row */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+/* Table style */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  background-color: #f8f9fa;
+}
+
+/* Style for table headers */
+table thead th {
+  background-color: #939f76;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Style for rows and cells */
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tbody td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Hover for rows */
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.alternative-info {
+  margin-top: 5%;
+  display: none;
+  /* Initially hidden */
+  padding: 20px;
+  background-color: #fff;
+  /* white background */
+  border-radius: 15px;
+  /* rounded borders */
+  max-width: 500px;
+  /* Maximum width */
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* soft shadow */
+  text-align: center;
+  color: black;
+  /* Text Color */
+  font-size: 18px;
+  /* Appropriate font size */
+  line-height: 1.8;
+  /* More spacious line spacing */
+  background-color: #f8f9fae2;
+  /* Soft light gray background */
+  border: 2px solid #ddd;
+  /* soft border */
+}
+
+.alternative-info p strong {
+  font-size: 20px;
+  color: royalblue;
+  /* Color para los títulos (días) */
+  display: block;
+  margin-bottom: 12px;
+  /* Espacio debajo del título */
+}
+
+/* Adaptation to different device sizes */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  table {
+    display: none;
+  }
+
+  .alternative-info {
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  table {
+    font-size: 16px;
+    /* Larger font size */
+  }
+
+  table tbody td {
+    padding: 16px;
+    /* More space in cells */
+  }
+
+  .alternative-info {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  table {
+    width: 80%;
+    /* Narrower table for big screens */
+    margin: 20px auto;
+    /* Center horizontally */
+  }
+
+  table thead th {
+    font-size: 18px;
+    /* Larger font in headers */
+    padding: 16px;
+  }
+
+  table tbody td {
+    font-size: 16px;
+  }
+
+  .alternative-info {
+    display: none;
+  }
+}

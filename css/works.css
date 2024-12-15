@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Body style */
+body {
+  background-color: #D9C6B0;
+}
+
+/* info style */
+.first-container {
+  display: flex;
+  /* Sets the container as a flex container */
+  flex-direction: row;
+  /* Aligns the container's content in a row */
+  flex-wrap: wrap;
+  /* Allows elements to wrap into multiple lines if they don’t fit on a single line */
+  padding: 2em;
+  /* Add space around the content */
+}
+
+.first-container h1 {
+  padding-top: 50px;
+  margin-bottom: 15px;
+}
+
+.first-container p {
+  font-size: large;
+  margin-bottom: 1em;
+  /*adds a margin below each paragraph */
+}
+
+.work-h1 {
+  display: flex;
+  /* Sets the container as a flex container */
+  flex-direction: row;
+  /* Aligns the container's content in a row */
+  flex-wrap: wrap;
+  /* Allows elements to wrap into multiple lines if they don’t fit on a single line */
+  padding: 2em;
+  /* Add space around the content */
+}
+
+.sea-container {
+  display: flex;
+  /* Sets the container as a flex container */
+  flex-direction: row;
+  /* Aligns the container's content in a row */
+  flex-wrap: wrap;
+  /* Allows elements to wrap into multiple lines if they don’t fit on a single line */
+  /* justify-content: space-between; */
+  /* Distributes elements with one at the start and another at the end */
+  padding: 2em;
+  /* Add space around the content */
+}
+
+.sea-container h2 {
+  margin-bottom: 15px;
+}
+
+.sea-container p {
+  font-size: large;
+  margin-bottom: 1em;
+  /*adds a margin below each paragraph */
+}
+
+.canvas-sea-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.earth-container {
+  display: flex;
+  /* Sets the container as a flex container */
+  flex-direction: row;
+  /* Aligns the container's content in a row */
+  flex-wrap: wrap;
+  /* Allows elements to wrap into multiple lines if they don’t fit on a single line */
+  /* justify-content: space-between; */
+  /* Distributes elements with one at the start and another at the end */
+  padding: 2em;
+  /* Add space around the content */
+}
+
+.earth-container h2 {
+  margin-bottom: 15px;
+}
+
+.earth-container p {
+  font-size: large;
+  margin-bottom: 1em;
+}
+
+.canvas-earth-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
